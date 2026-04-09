@@ -1,0 +1,29 @@
+[user]
+	name = vatsanant
+	email = vatsanant01@gmail.com
+
+[init]
+   defaultBranch = main
+
+[core]
+   editor = vim
+   autocrlf = input
+   excludesfile = ~/.gitignore_global
+
+[pull]
+   rebase = false
+
+[rebase]
+   autoStash = true
+
+[color]
+   ui = auto
+
+[credential]
+    helper = cache --timeout=7200
+
+[credential "https://github.com"]
+    helper = !/usr/bin/gh auth git-credential
+
+[credential "https://gist.github.com"]
+    helper = !/usr/bin/gh auth git-credential
